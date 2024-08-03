@@ -1,0 +1,10 @@
+FILE="pass_data"
+
+echo "パスワードマネージャーへようこそ！"
+read -p "サービス名を入力してください: " service
+read -p "ユーザー名を入力してください: " username
+read -p "パスワードを入力してください: " password
+echo
+
+echo "$service:$username:$password" >> $FILE
+echo "Thank you!"
